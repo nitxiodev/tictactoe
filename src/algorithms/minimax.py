@@ -5,7 +5,7 @@ from src.state import State
 class Minimax(Algorithm):
     """Basic minimax algorithm based on Rusell&Norvig pseudocode"""
 
-    def max_value(self, state: State) -> int:
+    def max_value(self, state: State, *args) -> int:
         if state.is_terminal:
             return state.utility
 
@@ -15,7 +15,7 @@ class Minimax(Algorithm):
 
         return v
 
-    def min_value(self, state: State) -> int:
+    def min_value(self, state: State, *args) -> int:
         if state.is_terminal:
             return state.utility
 
