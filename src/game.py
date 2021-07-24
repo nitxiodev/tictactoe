@@ -1,6 +1,6 @@
 import random
 
-from algorithms import Minimax, AlphaBeta
+from algorithms import AlphaBeta, Minimax
 from state import State
 from utils import pretty_print
 
