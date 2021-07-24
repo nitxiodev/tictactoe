@@ -5,7 +5,7 @@ Tic-tac-toe game using minimax algorithm with alpha-beta pruning based on Russel
 To run the tic-tac-toe game, simply type this command in the shell:
 
 ```python
-python game.py
+export PYTHONPATH=.; python src/game.py
 ```
 
 ### Board game

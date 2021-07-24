@@ -11,7 +11,7 @@ class AlphaBeta(Algorithm):
         if state.is_terminal:
             return state.utility
 
-        v = -1000
+        v = -self.infinite
         for action in self.successors(state):
             v = max(v, self.min_value(action, alpha, beta))
             if alpha >= beta:
@@ -26,7 +26,7 @@ class AlphaBeta(Algorithm):
         if state.is_terminal:
             return state.utility
 
-        v = 1000
+        v = self.infinite
         for action in self.successors(state):
             v = min(v, self.max_value(action, alpha, beta))
             if v <= alpha:
