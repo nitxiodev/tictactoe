@@ -1,5 +1,5 @@
-from algorithms.base import Algorithm
-from state import State
+from src.algorithms.base import Algorithm
+from src.state import State
 
 
 class AlphaBeta(Algorithm):
