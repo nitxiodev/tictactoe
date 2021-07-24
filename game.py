@@ -31,6 +31,12 @@ class Game:
     def random_start(self):
         return random.randint(0, 1)
 
+    def resume(self, player, status):
+        resume = "Game finished in a draw!"
+        if status != 0:
+            resume = f"Player `{self._who_am_i.get(player)}` won the game! Congrats!"
+        return resume
+
     def game_cycle(self):
         """Fully game cycle"""
 
@@ -42,7 +48,7 @@ class Game:
             self.move(self._state.board, who=who)
             print(pretty_print(self._state.board))
 
-        print("Game finished!")
+        print("===> ", self.resume(who, self._state.utility))
 
 
 if __name__ == "__main__":
