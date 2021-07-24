@@ -18,12 +18,9 @@ class Game:
             position = int(input(f"Put position... {valid_positions}: "))
             while position not in range(9) or not self.is_valid_movement(board, position):
                 position = int(input(f"Please, put a valid position... {valid_positions}: "))
-            position = int(position)
-
         else:
             position = self._algorithm.run(self._state)
 
-        position = int(position)
         self._state = State(
             board=board[:position] + self._tics.get(who) + board[position + 1 :], player=self._tics.get(int(not who))
         )
