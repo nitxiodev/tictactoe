@@ -1,5 +1,5 @@
 # tictactoe
-Tic-tac-toe game using minimax algorithm with alpha-beta pruning.
+Tic-tac-toe game using minimax algorithm with alpha-beta pruning based on Russell and Norvig pseudocode.
 
 ## Instructions
 To run the tic-tac-toe game, simply type this command in the shell:
@@ -18,3 +18,4 @@ python game.py
 
 # TODO
 - Testing
+- Adding heuristic
