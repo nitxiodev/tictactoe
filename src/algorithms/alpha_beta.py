@@ -14,7 +14,7 @@ class AlphaBeta(Algorithm):
         v = -self.infinite
         for action in self.successors(state):
             v = max(v, self.min_value(action, alpha, beta))
-            if alpha >= beta:
+            if v >= beta:
                 return v
             alpha = max(alpha, v)
 

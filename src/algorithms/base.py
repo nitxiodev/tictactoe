@@ -28,4 +28,6 @@ class Algorithm:
 
     def run(self, state: State):
         """Minimax main logic"""
-        return max(enumerate(self.successors(state)), key=lambda x: self.min_value(x[1], -1000, 1000))[1].movement
+        return max(
+            enumerate(self.successors(state)), key=lambda x: self.min_value(x[1], -self.infinite, self.infinite)
+        )[1].movement
