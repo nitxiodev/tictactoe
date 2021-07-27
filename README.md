@@ -2,7 +2,7 @@
 Tic-tac-toe game using minimax algorithm with alpha-beta pruning based on Russell and Norvig pseudocode.
 
 ## Instructions
-To run the tic-tac-toe game, simply type this command in the shell:
+To run the tic-tac-toe game, simply type this command in the shell (you'll need Python3):
 
 ```python
 export PYTHONPATH=.; python src/game.py
