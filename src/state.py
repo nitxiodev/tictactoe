@@ -54,7 +54,13 @@ class State:
         def check_full():
             return "-" not in self.board
 
-        return check_full() or check_rows() or check_cols() or check_diagonals()
+        # Check board game
+        check_full = check_full()
+        check_diagonals = check_diagonals()
+        check_rows = check_rows()
+        check_cols = check_cols()
+
+        return check_full or check_rows or check_cols or check_diagonals
 
     @property
     def utility(self):
